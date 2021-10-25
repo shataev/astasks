@@ -1,0 +1,32 @@
+<tr class="table-row">
+    <td class="table-cell cell-name">
+        <% if ( isEdit ) { %>
+        <div class="input-container">
+            <input type="text" class="input input-name" value="<%= name %>">
+            <span class="error-message error-message-name"></span>
+        </div>
+        <% } else { %>
+            <div class="value value-name"><%= name %></div>
+        <% } %>
+    </td>
+    <td class="table-cell cell-phone">
+        <% if ( isEdit ) { %>
+            <div class="input-container">
+                <input type="text" class="input input-phone" value="<%= phone %>">
+                <span class="error-message  error-message-phone"></span>
+            </div>
+        <% } else { %>
+            <div class="value value-phone"><%= phone %></div>
+        <% } %>
+    </td>
+    <td class="table-cell">
+        <div class="buttons">
+            <% if ( isEdit ) { %>
+                <button class="button button-save">Save</button>
+            <% } else { %>
+                <button class="button button-edit">Edit</button>
+            <% } %>
+            <button class="button button-remove">Delete</button>
+        </div>
+    </td>
+</tr>

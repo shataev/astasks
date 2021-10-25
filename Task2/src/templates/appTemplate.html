@@ -1,0 +1,27 @@
+<div class="wrapper">
+    <h3 class="title">Task 2. User List.</h3>
+    <div class="main">
+        <table class="table user-table">
+            <thead>
+                <tr class="table-row">
+                    <th class="table-cell table-cell-header">Name</th>
+                    <th class="table-cell table-cell-header">Phone</th>
+                    <th class="table-cell table-cell-header"></th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+
+        <form class="add-user-form" id="addUserForm">
+            <div class="input-container">
+                <input type="text" placeholder="Name" class="add-user-form-input add-user-form-name" name="name">
+                <span class="error-message error-message-name"></span>
+            </div>
+            <div class="input-container">
+                <input type="text" placeholder="Phone" class="add-user-form-input add-user-form-phone" name="phone">
+                <span class="error-message error-message-phone"></span>
+            </div>
+            <button type="button" class="add-user-form-button button-add-user">Add user</button>
+        </form>
+    </div>
+</div>
